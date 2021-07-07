@@ -14,9 +14,9 @@ fig = plt.figure()
 # #     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.title('TILDI KAICHON')
+st.markdown('Thai Fighting Cock (Fighting Rooster) Classification')
 
 # st.markdown("<h1 style='text-align: center; color: black;'>TILDI KAICHON</h1>", unsafe_allow_html=True)
-
 
 # #st.markdown("TILDI-Kaichon Classification")
 
@@ -46,6 +46,15 @@ def main():
 
     st.markdown("TILDI-Kaichon model by Kao Panboonyuen (~70.59% accuracy)")
 
+    st.text("ไก่ด่างเบญจรงค์ (Benjarong spotted)")
+    st.text("ไก่ทองแดงหางดำ Tong Daeng Hang Dam (Copper with black tail)")
+    st.text("ไก่นกกรดหางดำ Nok Kod Hang Dam (Reddish with Black tail)")
+    st.text("ไก่นกแดง Nok Daeng (Red)")
+    st.text("ไก่ประดู่หางดำ Pradoo Hang Dam (Partridge black red with black tail)")
+    st.text("ไก่ประดู่เลาหางขาว Pradoo Hang Khao (Partridge black red with white tail)")
+    st.text("ไก่เทาหางขาว Tao Hang Khao (Grey with white tail)")
+    st.text("ไก่เหลืองหางขาว Luang Hang Khao (Yellow with white tail)")
+
 
 def predict(image):
     classifier_model = "tildi-kaichon-v001.h5"
@@ -56,7 +65,7 @@ def predict(image):
     test_image = test_image / 255.0
     test_image = np.expand_dims(test_image, axis=0)
     class_names = [
-          'ไก่ด่างเบญจรงค์ (Benjarong Spotted)', 
+          'ไก่ด่างเบญจรงค์ (Benjarong spotted)', 
           'ไก่ทองแดงหางดำ Tong Daeng Hang Dam (Copper with black tail)', 
           'ไก่นกกรดหางดำ Nok Kod Hang Dam (Reddish with Black tail)', 
           'ไก่นกแดง Nok Daeng (Red)', 
@@ -68,7 +77,7 @@ def predict(image):
     scores = tf.nn.softmax(predictions[0])
     scores = scores.numpy()
     results = {
-          'ไก่ด่างเบญจรงค์ (Benjarong Spotted)': 0, 
+          'ไก่ด่างเบญจรงค์ (Benjarong spotted)': 0, 
           'ไก่ทองแดงหางดำ Tong Daeng Hang Dam (Copper with black tail)': 1, 
           'ไก่นกกรดหางดำ Nok Kod Hang Dam (Reddish with Black tail)': 2, 
           'ไก่นกแดง Nok Daeng (Red)': 3, 
