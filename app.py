@@ -46,14 +46,14 @@ def main():
 
     st.markdown("TILDI-Kaichon model by Kao Panboonyuen (~70.59% accuracy)")
 
-    st.text("ไก่ด่างเบญจรงค์ (Benjarong spotted)")
-    st.text("ไก่ทองแดงหางดำ Tong Daeng Hang Dam (Copper with black tail)")
-    st.text("ไก่นกกรดหางดำ Nok Kod Hang Dam (Reddish with Black tail)")
-    st.text("ไก่นกแดง Nok Daeng (Red)")
-    st.text("ไก่ประดู่หางดำ Pradoo Hang Dam (Partridge black red with black tail)")
-    st.text("ไก่ประดู่เลาหางขาว Pradoo Hang Khao (Partridge black red with white tail)")
-    st.text("ไก่เทาหางขาว Tao Hang Khao (Grey with white tail)")
-    st.text("ไก่เหลืองหางขาว Luang Hang Khao (Yellow with white tail)")
+    # st.text("ไก่ด่างเบญจรงค์ (Benjarong spotted)")
+    # st.text("ไก่ทองแดงหางดำ Tong Daeng Hang Dam (Copper with black tail)")
+    # st.text("ไก่นกกรดหางดำ Nok Kod Hang Dam (Reddish with Black tail)")
+    # st.text("ไก่นกแดง Nok Daeng (Red)")
+    # st.text("ไก่ประดู่หางดำ Pradoo Hang Dam (Partridge black red with black tail)")
+    # st.text("ไก่ประดู่เลาหางขาว Pradoo Hang Khao (Partridge black red with white tail)")
+    # st.text("ไก่เทาหางขาว Tao Hang Khao (Grey with white tail)")
+    # st.text("ไก่เหลืองหางขาว Luang Hang Khao (Yellow with white tail)")
 
 
 def predict(image):
