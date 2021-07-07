@@ -7,20 +7,20 @@ import numpy as np
 from tensorflow import keras
 from tensorflow.keras.models import load_model
 from tensorflow.keras import preprocessing
-#import time
+import time
 fig = plt.figure()
 
-# # with open("custom.css") as f:
-# #     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# with open("custom.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.title('TILDI KAICHON')
 st.markdown('Thai Fighting Cock (Fighting Rooster) Classification')
 
-# st.markdown("<h1 style='text-align: center; color: black;'>TILDI KAICHON</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: black;'>TILDI KAICHON</h1>", unsafe_allow_html=True)
 
-# #st.markdown("TILDI-Kaichon Classification")
+#st.markdown("TILDI-Kaichon Classification")
 
-# st.markdown("<h3 style='text-align: center; color: black;'>Thai Fighting Cock (Fighting Rooster) Classification</h3>", unsafe_allow_html=True)
+#st.markdown("<h3 style='text-align: center; color: black;'>Thai Fighting Cock (Fighting Rooster) Classification</h3>", unsafe_allow_html=True)
 
 
 def main():
